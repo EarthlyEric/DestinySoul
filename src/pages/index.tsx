@@ -6,8 +6,10 @@ import { Component } from "react"
 export default function Home() {
   return (
     <Component>
+      <Head>
+        <title></title>
+      </Head>
       <Navbar></Navbar>
-    <div></div>
     </Component>
     
   )

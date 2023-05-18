@@ -1,6 +1,5 @@
-import { Component, useState } from "react";
+import { useState } from "react";
 import Image from 'next/image';
-import { redirect } from "next/dist/server/api-utils";
 
 export default function Navbar(){
     const [navbar, setNavbar] = useState(false);
