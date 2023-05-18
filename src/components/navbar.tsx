@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Component, useState } from "react";
 import Image from 'next/image';
 
 export default function Navbar(){
@@ -10,7 +10,7 @@ export default function Navbar(){
                     <Image src="/resources/logo.png" width={192} height={64} alt="DestinySoul Logo"/>
                 </div>
                 <div className="md:hidden">
-                    <button className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border" onClick={() => setNavbar(!navbar)} >
+                    <button data-collapse-toggle="navbar-mobile" aria-controls="navbar-mobile" aria-expanded="false" className="p-2 text-white rounded-md outline-none focus:border-gray-400 focus:border" onClick={() => setNavbar(!navbar)} >
                         {navbar ? (<svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     className="w-6 h-6"
@@ -40,21 +40,24 @@ export default function Navbar(){
                                     </svg>)}
                     </button>
                 </div>
-                <div className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"}`}>
-                        <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                        <li className="text-gray-600 hover:text-blue-600">
-                            <a href="javascript:void(0)">Home</a>
+                <div className={`w-full md:block md:w-auto ${navbar ? "block" : "hidden"}`} id="navbar-mobile">
+                    <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#" className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
                         </li>
-                        <li className="text-gray-600 hover:text-blue-600">
-                            <a href="javascript:void(0)">Blog</a>
+                        <li>
+                            <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
                         </li>
-                        <li className="text-gray-600 hover:text-blue-600">
-                            <a href="javascript:void(0)">About US</a>
+                        <li>
+                            <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
                         </li>
-                        <li className="text-gray-600 hover:text-blue-600">
-                            <a href="javascript:void(0)">Contact US</a>
+                        <li>
+                            <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
                         </li>
-                    </ul>
+                        <li>
+                            <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                        </li>
+                    </ul> 
                 </div>
             </div>
         </div>
