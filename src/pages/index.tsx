@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title></title>
+        <title>Destiny‧Soul</title>
       </Head>
       <Navbar></Navbar>
     </div>
