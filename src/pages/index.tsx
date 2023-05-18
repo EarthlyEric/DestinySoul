@@ -1,6 +1,14 @@
-import Navbar from "./components/navbar"
+import Head from "next/head"
+import Navbar from "../components/navbar"
+import { Component } from "react"
+
+
 export default function Home() {
   return (
-    <Navbar></Navbar>
+    <Component>
+      <Navbar></Navbar>
+    <div></div>
+    </Component>
+    
   )
 }
