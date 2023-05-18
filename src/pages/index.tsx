@@ -1,16 +1,14 @@
 import Head from "next/head"
 import Navbar from "../components/navbar"
-import { Component } from "react"
-
 
 export default function Home() {
   return (
-    <Component>
+    <div>
       <Head>
         <title></title>
       </Head>
       <Navbar></Navbar>
-    </Component>
-    
+    </div>
+      
   )
 }
