@@ -6,9 +6,9 @@ export default function Home() {
     <div>
       <Head>
         <title>Destiny‧Soul</title>
+        <meta name="description" content="Destiny‧Soul工作室官方網站 !"/>
       </Head>
       <Navbar></Navbar>
-    </div>
-      
+    </div> 
   )
 }
