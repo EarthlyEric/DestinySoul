@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /resources/
+Allow: /
+Host: https://destinysoul.eu.org
+Sitemap: https://destinysoul.eu.org/sitemap.xml
