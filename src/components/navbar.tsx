@@ -6,7 +6,7 @@ export default function Navbar(){
     return (
         <header className="py-2 z-10 fixed top-0 left-0 right-0 border-b bg-black border-white">
             <div className="flex items-center justify-between xl:max-w-7xl xl:mx-auto max-w-full px-[8%] flex-wrap w-full">
-                <Image src="img/logo.png" width={192} height={64} alt={"Destiny Soul Logo"}/>
+                <Image src="/resources/img/logo.png" width={192} height={64} alt={"Destiny Soul Logo"}/>
                 <button className="text-white lg:hidden block h-6 w-6 cursor-pointer" onClick={()=>close(!open)}>
                     {open ? (<svg  xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" viewBox="0 0 20 20" fill="currentColor">
                                 <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd"/>
