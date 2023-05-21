@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Navbar from "../components/navbar"
+import TypewriterComponent from "typewriter-effect"
 
 export default function Home() {
   return (
@@ -15,7 +16,25 @@ export default function Home() {
             <h1 className="text-6xl font-bold">Destiny‧Soul</h1>
           </div>
           <div>
-            <h2 className="text-1xl font-bold">Destiny‧Soul工作室官方網站 !</h2>
+            <TypewriterComponent  options={{
+              autoStart: true,
+              loop: true,
+              delay:75
+              }} onInit={(typewriter) => {
+              typewriter.typeString("歡迎來到 Destiny‧Soul 官方網站")
+              .pauseFor(100)
+              .typeString(" !")
+              .pauseFor(100)
+              .typeString(" !")
+              .pauseFor(100)
+              .typeString(" ?")
+              .pauseFor(2500)
+              .deleteAll()
+              .typeString("您可以在此獲取 Destiny‧Soul 的最新作品 !")
+              .pauseFor(2500)
+              .deleteAll()
+              .start();
+            }}/>
           </div>
         </div>
       </section>
