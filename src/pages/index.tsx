@@ -9,14 +9,14 @@ export default function Home() {
         <meta name="description" content="Destiny‧Soul工作室官方網站 !"/>
       </Head>
       <Navbar></Navbar>
-      <section id="#home"className="bg-[url('/img/bg.png')] w-full h-screen bg-left bg-cover bg-dunes" >
-        <div className="px-2 py-5">
-          hi
-        </div>
-      </section>
-      <section id="#home"className="bg-white w-full h-screen bg-left bg-cover bg-dunes" >
-        <div className="px-2 py-5">
-          hi
+      <section id="#home"className=" w-full h-screen flex justify-center items-center bg-[url('/img/bg.png')] bg-left bg-cover bg-dunes" >
+        <div className="px-10 grid grid-cols-1 gap-4 place-content-center h-48 text-center rounded-xl backdrop-blur-sm bg-white/30 ">
+          <div>
+            <h1 className="text-6xl font-bold">Destiny‧Soul</h1>
+          </div>
+          <div>
+            <h2 className="text-1xl font-bold">Destiny‧Soul工作室官方網站 !</h2>
+          </div>
         </div>
       </section>
     </div> 

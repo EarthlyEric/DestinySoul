@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Navbar(){
     const [open,close]=useState(false);
     return (
-        <header className="sticky top-0 border-b bg-black border-white py-2">
+        <header className="py-2 z-10 fixed top-0 left-0 right-0 border-b bg-black border-white">
             <div className="flex items-center justify-between xl:max-w-7xl xl:mx-auto max-w-full px-[8%] flex-wrap w-full">
                 <Image src="img/logo.png" width={192} height={64} alt={"Destiny Soul Logo"}/>
                 <button className="text-white lg:hidden block h-6 w-6 cursor-pointer" onClick={()=>close(!open)}>
