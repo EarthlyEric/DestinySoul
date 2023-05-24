@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
     <Component {...pageProps} />
-    <Script src="/resources/scripts/consle.js"/>
+    <Script src="/resources/scripts/consle.js" strategy="afterInteractive"/>
     </>
   )
 }

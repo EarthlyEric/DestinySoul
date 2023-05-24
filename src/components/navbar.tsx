@@ -1,4 +1,4 @@
-import { Component, useState } from "react";
+import { Component, useState } from 'react';
 import Image from 'next/image';
 
 export default function Navbar(){
@@ -19,15 +19,16 @@ export default function Navbar(){
                 <nav className={`${open ? "block":"hidden"} w-full lg:flex lg:item-center lg:w-auto`}>
                     <ul className="font-sans text-base text-center lg:flex lg:justify-between">
                         <li>
-                            <a className="lg:px-5 py-2 block text-white hover:text-gary-500" href="./">首頁</a>
+                            <a className="lg:px-5 py-2 block text-white hover:text-gary-500" href="./">
+                                <span className="animation-underline">專案</span>
+                            </a>
                         </li>
                         <li>
-                            <a className="lg:px-5 py-2 block text-white hover:text-gary-500" href="./">專案</a>
+                            <a className="lg:px-5 py-2 block text-white hover:text-gary-500" href="./">
+                            <span className="animation-underline">關於我們</span>
+                            </a>
                         </li>
-                        <li>
-                            <a className="lg:px-5 py-2 block text-white hover:text-gary-500" href="./">關於我們</a>
-                        </li>
-                        
+                    
                         <li>
                             <a className="lg:px-6 py-2 block bg-white text-black hover:text-gary-500 rounded-xl" href="./">Login</a>
                         </li>
