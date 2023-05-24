@@ -24,7 +24,7 @@ export default function Navbar(){
                             </a>
                         </li>
                         <li>
-                            <a className="lg:px-5 py-2 block text-white hover:text-gary-500" href="./">
+                            <a className="lg:px-5 py-2 block text-white hover:text-gary-500" href="./about">
                             <span className="animation-underline">關於我們</span>
                             </a>
                         </li>
