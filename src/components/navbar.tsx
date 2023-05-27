@@ -28,7 +28,6 @@ export default function Navbar(){
                             <span className="animation-underline">關於我們</span>
                             </a>
                         </li>
-                    
                         <li>
                             <a className="lg:px-6 py-2 block bg-white text-black hover:text-gary-500 rounded-xl" href="./">Login</a>
                         </li>
