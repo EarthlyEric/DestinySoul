@@ -1,20 +1,14 @@
-import Head from "next/head";
+import Metadata from "@/components/widgets/metadata";
 import Navbar from "../components/navbar";
 import TypewriterComponent from "typewriter-effect";
 
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>Destiny‧Soul</title>
-        <meta name="description" content="Destiny‧Soul工作室官方網站 !" />
-      </Head>
+      <Metadata title="Destiny‧Soul" description="Destiny‧Soul工作室官方網站 !"/>
       <Navbar />
-      <section
-        id="#title"
-        className="w-full h-screen flex place-content-center items-center bg-[url('/resources/img/bg.png')] bg-left bg-cover bg-dunes"
-      >
-        <div className="px-10 py-2 grid grid-cols-1 gap-4 h-48 text-center rounded-xl backdrop-blur-sm bg-white/30">
+      <section id="#title" className="w-full h-screen flex place-content-center items-center bg-[url('/resources/img/bg.png')] bg-left bg-cover bg-dunes">
+        <div className="px-10 py-2 grid grid-cols-1 gap-4 h-48 place-content-center text-center rounded-xl backdrop-blur-sm bg-white/30">
           <div>
             <h1 className="text-6xl font-bold">Destiny‧Soul</h1>
           </div>

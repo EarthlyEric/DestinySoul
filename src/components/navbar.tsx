@@ -19,7 +19,7 @@ export default function Navbar(){
                 <nav className={`${open ? "block":"hidden"} w-full lg:flex lg:item-center lg:w-auto`}>
                     <ul className="font-sans text-base text-center lg:flex lg:justify-between">
                         <li>
-                            <a className="lg:px-5 py-2 block text-white hover:text-gary-500" href="./">
+                            <a className="lg:px-5 py-2 block text-white hover:text-gary-500" href="./pojects">
                                 <span className="animation-underline">專案</span>
                             </a>
                         </li>
