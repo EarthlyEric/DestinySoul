@@ -5,12 +5,12 @@ import TypewriterComponent from "typewriter-effect";
 export default function Home() {
   return (
     <div>
-      <Metadata title="Destiny‧Soul" description="Destiny‧Soul工作室官方網站 !"/>
+      <Metadata title="DestinySoul" description="DestinySoul工作室官方網站 !"/>
       <Navbar />
       <section id="#title" className="w-full h-screen flex place-content-center items-center bg-[url('/resources/img/bg.png')] bg-left bg-cover bg-dunes">
         <div className="px-10 py-2 grid grid-cols-1 gap-4 h-48 place-content-center text-center rounded-xl backdrop-blur-sm bg-white/30">
           <div>
-            <h1 className="text-6xl font-bold">Destiny‧Soul</h1>
+            <h1 className="text-6xl font-bold">DestinySoul</h1>
           </div>
           <div className="font-bold text">
             <TypewriterComponent
@@ -21,7 +21,7 @@ export default function Home() {
               }}
               onInit={(typewriter) => {
                 typewriter
-                  .typeString("歡迎來到 Destiny‧Soul 官方網站")
+                  .typeString("歡迎來到 DestinySoul 官方網站")
                   .pauseFor(100)
                   .typeString(" !")
                   .pauseFor(100)
@@ -30,7 +30,7 @@ export default function Home() {
                   .typeString(" ?")
                   .pauseFor(2500)
                   .deleteAll()
-                  .typeString("您可以在此獲取 Destiny‧Soul 的最新作品 !")
+                  .typeString("您可以在此獲取 DestinySoul 的最新作品 !")
                   .pauseFor(2500)
                   .deleteAll()
                   .start();
