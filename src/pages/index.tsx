@@ -1,12 +1,14 @@
 import Metadata from "@/components/widgets/metadata";
 import Navbar from "../components/navbar";
+import Footer from "@/components/footer";
 import TypewriterComponent from "typewriter-effect";
+
 
 export default function Home() {
   return (
     <div>
       <Metadata title="DestinySoul" description="DestinySoul工作室官方網站 !"/>
-      <Navbar />
+      <Navbar/>
       <section id="#title" className="w-full h-screen flex place-content-center items-center bg-[url('/resources/img/bg.png')] bg-left bg-cover bg-dunes">
         <div className="px-10 py-2 grid grid-cols-1 gap-4 h-48 place-content-center text-center rounded-xl backdrop-blur-sm bg-white/30">
           <div>
@@ -48,6 +50,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 }
