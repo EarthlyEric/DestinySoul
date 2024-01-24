@@ -7,7 +7,7 @@ import TypewriterComponent from "typewriter-effect";
 export default function Home() {
   return (
     <div>
-      <Metadata title="DestinySoul" description="DestinySoul工作室官方網站 !"/>
+      <Metadata title="DestinySoul Softwere" description="DestinySoul 官方網站 ! 這裡提供了"/>
       <Navbar/>
       <section id="#title" className="w-full h-screen flex place-content-center items-center bg-[url('/resources/img/bg.png')] bg-left bg-cover bg-dunes">
         <div className="px-10 py-2 grid grid-cols-1 gap-4 h-48 place-content-center text-center rounded-xl backdrop-blur-sm bg-white/30">
